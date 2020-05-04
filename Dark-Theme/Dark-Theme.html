@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="C:\Users\JIM\Desktop\jimthomas1997.github.io\src\css\main.css">
+	<title>Dark-Theme</title>
+	<meta name="format-detection" content="telephone=no">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=latin,cyrillic'
+		rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="C:\Users\JIM\Desktop\Resume-darktheme-Nav\Dark-Theme-Style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/prettify.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/normalize.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+</head>
+
+<body>
+
+	<!-- <section class="content"> -->
+		<div class="container-fluid">
+			<div class="content-wrap">
+				
+					<!-- <aside class="fixed"> -->
+				
+                    <nav>
+							
+								<ul class="nav-links">
+									
+									<li><a data-scroll href="#one">My profile</a></li>
+									<li><a data-scroll href="#two">Education</a></li>
+									<li><a data-scroll href="#three">Skills</a></li>
+									<li><a data-scroll href="#four">Co-Curricular</a></li>
+									
+                                </ul>
+                            <label class="switch-theme" for="checkbox">
+                                    <input type="checkbox" id="checkbox" />
+                                    <div class="slider round"></div>
+                                </label>
+                    </nav>
+                
+                </div>
+                       
+                    <!-- </aside> -->
+            
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+                <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+                    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+                </script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+                    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+                </script>
+                <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+                    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+                </script>
+                <script src="assets/js/prettify.min.js"></script>
+                <script src="assets/js/scripts.min.js"></script>
+                <script>
+                    var scroll = new SmoothScroll('a[href*="#"]');
+                    const toggleSwitch = document.querySelector('.switch-theme input[type="checkbox"]');
+                    const currentTheme = localStorage.getItem('theme');
+            
+                    if (currentTheme) {
+                        document.documentElement.setAttribute('data-theme', currentTheme);
+            
+                        if (currentTheme === 'dark') {
+                            toggleSwitch.checked = true;
+                        }
+                    }
+            
+                    function switchTheme(e) {
+                        if (e.target.checked) {
+                            document.documentElement.setAttribute('data-theme', 'dark');
+                            localStorage.setItem('theme', 'dark');
+                        } else {
+                            document.documentElement.setAttribute('data-theme', 'light');
+                            localStorage.setItem('theme', 'light');
+                        }
+                    }
+            
+                    toggleSwitch.addEventListener('change', switchTheme, false);
+                </script>
+
+
+
+                <div class="content-info" style="width:100%;">
+                <section class="section-one" id="one">
+                    <h1 style="padding:2%;">MY PROFILE</h1>
+                    <br>
+                    <p class="section-one--para">Hey there!! This is Jim Thomas. I'm 3rd year Btech student. I'm persuing
+                        Btech in Information and Technology from Rajagiri School of Engineering and Technology,Kochi,Kerala.
+                        I was born and brought up in delhi and completed my schooling from Father Agnel School,Gautam
+                        Nagar,New Delhi. I'm punctual,hardworking and I am always energetic and eager to learn new skills.
+                        Here are some of my projects:
+                    </p><br>
+                    <h1>PROJECTS</h1><br>
+                    <div class="row">
+    
+                        <div class="col-sm-6">
+                            <div class="card shadow p-3 mb-5 bg-white rounded ">
+                                <div class="card-body">
+                                    <h5 class="card-title">ColdBlocks(4th year)</h5>
+                                    <p class="card-text">Final year project on supply chain with temperatire guided route
+                                        optimization. </p>
+    
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="col-sm-6">
+                            <div class="card shadow p-3 mb-5 bg-white rounded">
+                                <div class="card-body">
+                                    <h5 class="card-title">Personal Portfolio</h4>
+                                    <p class="card-text">Developed personal portfolio using HTML, CSS, jQuery, Bootstrap and
+                                        other frameworks. Hosted the page on github pages.</p>
+    
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="col-sm-6">
+                            <div class="card shadow p-3 mb-5 bg-white rounded">
+                                <div class="card-body">
+                                    <h5 class="card-title">R2G-Review To Government design project(3rd Year)</h5>
+                                    <p class="card-text">R2G is a review analysis project that scrapes reviews using scrapy
+                                        and then analyses them using VADER. Reviews were scraped from consumer forum
+                                        websites. Plotting of results was done using matplotlib. </p>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="col-sm-6">
+                            <div class="card shadow p-3 mb-5 bg-white rounded">
+                                <div class="card-body">
+                                    <h5 class="card-title">Ticket Reservation and Booking mini project(1st year)</h5>
+                                    <p class="card-text">Implemented a ticket reservation system as part of first year mini
+                                        project using python.</p>
+    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                </section>
+                
+    
+                  <section class="section-two" id="two">
+    
+                    <h1>EDUCATION</h1>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h3 class="card-title">Btech in Information Technology(KTU)</h3>
+                                    <h5 style=font-weight:normal class="card-text">Rajagiri School of Engineering and
+                                        Technology, Kakkanad, Kochi</h5>
+                                    <h5 style=font-weight:normal class="card-text">CGPA: 8.34</h5>
+    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6 offset-xl-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h3 class="card-title">XII (CBSE)</h3>
+                                    <h5 style=font-weight:normal class="card-text">Father Agnel School, Gautam Nagar, New
+                                        Delhi
+                                    </h5>
+                                    <h5 style=font-weight:normal class="card-text">Percentage: 83.6</h5>
+    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h3 class="card-title">X (CBSE)</h3>
+                                    <h5 style=font-weight:normal class="card-text">Father Agnel School, Gautam Nagar, New
+                                        Delhi
+                                    </h5>
+                                    <h5 style=font-weight:normal class="card-text">CGPA: 8.4</h5>
+    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                </section>
+    
+               <section class="section-three" id="three">
+                    <h1>SKILLS</h1><br>
+                    <p><b>Technical Skills: </b>C++, C, Python,javascript,PL-SQL, HTML5, CSS,jQuery,Bootstrap, Assembly
+                        Language 8085/8051</p><br>
+                    <p><b>Operating System: </b>Windows, Ubuntu</p><br>
+                    <p><b>Software: </b>CISCO packet tracer, star UML, KEIL-IDE</p>
+                </section>
+    
+    
+                <section class="section-four" id="four">
+                    <h1>CO-CURRICULAR</h1><br>
+                    <p>1st prize for UI/UX in mini hackathon(2018)</p><br>
+                    <p>2nd position in coding competition CODE-ERA by CSI</p><br>
+                    <p>Volunteered for Joshtalks@Kochi,2017</p> <br>
+                    <p>Volunteered for ICFOSS Fest,2018</p><br>
+                    <p>3rd year IT branch Representative</p><br>
+                    <p>Member of the Finance Ministry of Father Agnel School, Delhi(2016 batch)</p><br>
+                    <p>Completed <b>NPTEL</b> Online Certification course on <b>BIG DATA COMPUTING</b> with a
+                        consolidated score of 74 %.</p><br>
+    
+                </section>
+            </div>
+            </div>
+        </div>
+	</section>  
+        
+                    
+
+                    
+ </body>
+                
+</html>
